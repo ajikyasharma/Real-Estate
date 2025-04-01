@@ -56,9 +56,11 @@ export async function login(){
 
 
 export async function logout(){
+    console.log("hii")
     try {
          await account.deleteSession('current')
     } catch (error) {
+        console.log("byy", error)
         console.log(error);
         return false;
     }
