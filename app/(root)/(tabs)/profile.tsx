@@ -33,7 +33,6 @@ const profile = () => {
 
   const handleLogout = async () =>{
     const result = await logout();
-    console.log("result", result)
 
     if(result){
       Alert.alert("Success", "You have been loggedout successfully");
@@ -61,7 +60,7 @@ const profile = () => {
              <View className='flex flex-col items-center relative mt-5'>
               <Image source={{uri: user?.avatar}}  className='size-44 relative rounded-full' />
                 <TouchableOpacity className='absolute bottom-11 right-2'>
-                      <Image source={icons.edit} className='size-9' />
+                      <Image source={icons.edit1} className='size-9' />
                 </TouchableOpacity>
               <Text className='text-2xl font-rubik-bold mt-2'>{user?.name}</Text>
              </View>
