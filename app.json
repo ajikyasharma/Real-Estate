@@ -15,7 +15,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/icon1.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ajikyasharma.EliteNest"
     },
     "web": {
       "bundler": "metro",
@@ -27,8 +28,7 @@
       [
         "expo-splash-screen",
         {
-          
-          "image": "./assets/images/splash.png",           
+          "image": "./assets/images/icon1.png",
           "resizeMode": "cover",
           "backgroundColor": "#ffffff",
           "enableFullScreenImage_legacy": true
@@ -37,7 +37,7 @@
       [
         "expo-font",
         {
-          "fonts" :[
+          "fonts": [
             "./assets/fonts/Rubik-Bold.ttf",
             "./assets/fonts/Rubik-ExtraBold.ttf",
             "./assets/fonts/Rubik-Medium.ttf",
@@ -48,9 +48,17 @@
         }
       ]
     ],
-
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "bc24ee59-b429-42dc-acc1-c8740e10dd87"
+      }
+    },
+    "owner": "ajikyasharma"
   }
 }
